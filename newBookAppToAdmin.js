@@ -8,8 +8,8 @@ module.exports = (newBookAppToAdmin) => {
   host: 'email-smtp.us-east-1.amazonaws.com',
   secure: true,
   auth: {
-    user:'AKIA2QGC2OLT5A76S3TB',
-    pass: 'BHTLfkGMW+iWnn2/ZXz4Ak4cNwUpqdau4udCnTaYnECS',
+    user:'AKIA2QGC2OLTTW2FU37K',
+    pass: 'BHuqSmkCx2T6g+vBwOhvXMFfy47kD02uUjMww6SE9EFl',
   },
   debug: true
   
@@ -17,7 +17,7 @@ module.exports = (newBookAppToAdmin) => {
 
   const mailOptions = {
 
-    from: '"andesproadventures.com"<info@andesproadventures.com>',
+    from: '"frutme.com"<pedidos@frutme.com>',
     to: newBookAppToAdmin.adminEmail,
     subject: newBookAppToAdmin.asunto,
     html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -105,13 +105,7 @@ module.exports = (newBookAppToAdmin) => {
                                                                   <tr>
                                                                         <h3 style="font-weight: 600; padding: 0px; margin: 0px; font-size: 25px; line-height: 24px; text-align: left;" class="title-color">Hola ${newBookAppToAdmin.adminName}, Hemos registrado una nueva solicitud de reserva, le sera notificado cuando dicha solicitud sea confirmada por el cliente</h3>
                                                                          <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Cliente:</b> ${newBookAppToAdmin.nombre}</p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Tour:</b> ${newBookAppToAdmin.productName}</p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Nro. de Reserva:</b> ${newBookAppToAdmin.nroReserva}</p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Fecha:</b> ${newBookAppToAdmin.fecha}</p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Precio por persona:</b> ${newBookAppToAdmin.precioUni} <b>CLP</b></p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Nro. de personas:</b> ${newBookAppToAdmin.cant}</p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Monto total:</b> ${newBookAppToAdmin.monto} <b>CLP</b></p>
-                                                                        <p style="margin: 20px 20px 20px 20px;font-size: 25px;text-align: left;"> <b>Monto requerido para confirmar (30%):</b> ${newBookAppToAdmin.adelanto} <b>CLP</b></p>
+                                                                       
                                                                        
                                                                      </td>
                                                                   </tr>
